@@ -1,0 +1,3 @@
+Functions for initialization, evaluation and training of a 2-layers neural network with the ReLu as activation for the hidden layer and linear output.
+
+XOR_start.m is a script with an example of usage on the XOR classification problem
