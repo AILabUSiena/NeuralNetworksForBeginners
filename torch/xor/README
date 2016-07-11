@@ -1,3 +1,3 @@
-<b>Simple XOR classifier</b>
-<br>
-The code is strongly based on the code provided here: <a href= https://github.com/torch/nn/blob/master/doc/training.md#nn.traningneuralnet.dok>Torch Documentation</a>
+Simple XOR classifier
+
+The code is strongly based on the code provided here: https://github.com/torch/nn/blob/master/doc/training.md#nn.traningneuralnet.dok
