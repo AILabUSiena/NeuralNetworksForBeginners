@@ -3,6 +3,9 @@
 
 X = [0 0;0 1;1 0;1 1]'; % input matrix
 Y = [0 1 1 0]; % target matrix
+% uncomment to train on fuzzy distribution
+% X = rand( 2, 100 );
+% Y = ( X(1,:)-.5 ).*( X(2,:)-.5 ) < 0 ;
 
 %   model variables
 learningRate = 1e-3;
@@ -55,6 +58,8 @@ colormap(jet); % setting colormap
 hold on;
 contour(xp1,xp2,f,[.5,.5],'LineWidth',2,'Color','k'); % drawing separation curve
 % drawing data points 
+X = [0 0;0 1;1 0;1 1]'; % input matrix
+Y = [0 1 1 0]; % target matrix
 scatter(X(1,[1,4]),X(2,[1,4]),200,'o','filled','MarkerEdgeColor','k','MarkerFaceColor','w');
 scatter(X(1,[2,3]),X(2,[2,3]),200,'d','filled','MarkerEdgeColor','k','MarkerFaceColor','w');
 % labeling data points
