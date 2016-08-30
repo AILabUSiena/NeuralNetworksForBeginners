@@ -33,12 +33,12 @@ while i <= maxEpochs
         %   gradients computing
         % dE/dwO = (dE/do)*(do/dwO)
         nn.D_wO = delta * nn.zH'; % output layer weights
-        % dE/dwO = (dE/do)*(do/dbO)  (do/dbO = 1)
+        % dE/dbO = (dE/do)*(do/dbO)  (do/dbO = 1)
         nn.D_bO = delta; % output layer bias
         % back-propagation
         % dE/dbH = (dE/do)*(do/dzH)*(dzH/daH)*(daH/dbH) , (daH/dbH = 1)
         nn.D_bH = (nn.wO'*delta).*(nn.aH>0); % hidden layer bias
-        % dE/dbH = (dE/do)*(do/dzH)*(dzH/daH)*(daH/dwH)
+        % dE/dwH = (dE/do)*(do/dzH)*(dzH/daH)*(daH/dwH)
         nn.D_wH = nn.D_bH * X(:,j)' ; % hidden layer weights 
         
         %   updating
