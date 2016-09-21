@@ -33,5 +33,8 @@ The prediction of the network on data can be evaluated by  can by [nnEval.m](htt
 
 
 ```matlab
- nn = nnInit(nn,X,Y,1000,0.001)
+ nn = nnTrain(nn,X,Y,1000,0.001)
  ```
+We can visualize performance on data by ...
+
+<img src="perf.pdf" alt="performance plot"/><br/>
