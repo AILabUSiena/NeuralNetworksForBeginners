@@ -44,6 +44,8 @@ ylabel('MSE','FontSize',14)
 title('Training Error','FontSize',16)
 ```
 
+![](mse.png)
+
 and to have an idea of the prediction of the network on the input space we can plot the separation surfaces evaluating the network on a space gridding: 
 
 ```matlab
@@ -89,3 +91,4 @@ title('Separation Surfaces','FontSize',16);
 h = legend({'Prediction','Classes Bound','Class 0','Class 1'},'Location','SouthEast');
 set(h,'FontSize',14);
 ```
+![](surface.png)
