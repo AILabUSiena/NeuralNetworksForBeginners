@@ -24,11 +24,13 @@ function plotPredictions(mlp, n)
     local n = n or 3000
     local x = torch.rand(n,2):add(-0.5)
     local mlpOutput = mlp:forward(x)
-    local truePredMask = torch.gt(torch.abs(mlpOutput),mlpOutput:clone():fill(0))
-    local falsePredMask = truePredMask:add(-1):mul(-1)
+    local truePredMask = torch.gt(mlpOutput, mlpOutput:clone():fill(0))
+    local falsePredMask = truePredMask:clone():add(-1):mul(-1)
     local x1 = x:narrow(2,1,1)
     local x2 = x:narrow(2,2,1)
 
+print(falsePredMask)
+print(mlpOutput)
     if torch.sum(truePredMask) > 0 and  torch.sum(falsePredMask) > 0 then
         local truePlot = {'predicted as true', x1[truePredMask], x2[truePredMask],'+'}
         local falsePlot = {'predicted as false', x1[falsePredMask], x2[falsePredMask], '+'}
