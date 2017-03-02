@@ -1,7 +1,7 @@
 '''
 @author: Dario Zanca, Vincenzo Laveglia
 @date: 03-Nov-2016
-@summary: MNIST with tensorflow
+@summary: CNN to solve MNIST
 '''
 
 import tensorflow as tf	
