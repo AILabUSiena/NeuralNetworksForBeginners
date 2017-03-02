@@ -1,10 +1,9 @@
 '''
-
-@author: Dario Zanca
+@author: Dario Zanca, Vincenzo Laveglia
 @date: 03-Nov-2016
-@summary: XOR with tensorflow
-
+@summary: 2-layers neural network to solve XOR
 '''
+
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
