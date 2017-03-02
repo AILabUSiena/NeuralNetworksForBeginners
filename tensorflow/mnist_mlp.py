@@ -1,6 +1,7 @@
 '''
-Created on 13 ago 2016
-@author: vincenzo
+@author: Dario Zanca, Vincenzo Laveglia
+@date: 03-Nov-2016
+@summary: 2-layers neural network to solve MNIST
 '''
 
 import tensorflow as tf	
