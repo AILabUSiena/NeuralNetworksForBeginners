@@ -2,6 +2,8 @@
 
 Manual is available at http://arxiv.org/abs/1703.05298.
 
+
+
 If you found it useful for your research, please cite as:
 
 @misc{neural_networks_for_beginners,
