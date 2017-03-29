@@ -10,7 +10,7 @@ It only includes: download and loading of the dataset, definition and training o
 
 mnist_mlp.py
 Implementation of a 2-layers neural network to solve the MNIST problem.
-It includes: download and loading of the dataset, definition and training of the model, regularization criterion and validation check, tools functions, plot the gradient.
+It includes: download and loading of the dataset, definition and mini-batch training of the model, regularization criterion and validation check, tools functions, plot the gradient.
 
 mnist_cnn.py 
 Implementation of a convolutional neural network to solve the MNIST problem.
