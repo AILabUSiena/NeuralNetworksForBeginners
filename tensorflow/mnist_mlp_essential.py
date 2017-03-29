@@ -35,7 +35,7 @@ b2 = tf.Variable(tf.random_uniform([y_dim],-0.1, 0.1))
 
 y = tf.nn.relu(tf.matmul(h1,W2)+b2) # prediction
 
-MSE = tf.losses.mean_squared_error(y_, y) # Mean square error
+MSE = tf.losses.mean_squared_error(y_, y) # Mean squared error
 
 train_step = tf.train.AdamOptimizer(0.01).minimize(MSE)
 
