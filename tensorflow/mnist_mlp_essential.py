@@ -29,7 +29,6 @@ b1 = tf.Variable(tf.random_uniform([h_layer_dim],-0.1, 0.1))
 
 h1 = tf.nn.relu(tf.matmul(x_,W1)+b1) # hidden layer
 
-
 W2 = tf.Variable(tf.random_uniform([h_layer_dim, y_dim],-0.1, 0.1))
 b2 = tf.Variable(tf.random_uniform([y_dim],-0.1, 0.1))
 
