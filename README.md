@@ -10,7 +10,7 @@ If you found it useful for your research, please cite as:
 
 Author = {Francesco Giannini and Vincenzo Laveglia and Alessandro Rossi and Dario Zanca and Andrea Zugarini},
 
-Title = {Neural Networks for Beginners. A fast implemention in Matlab, Torch, TensorFlow},
+Title = {Neural Networks for Beginners. A fast implementation in Matlab, Torch, TensorFlow},
 
 Year = {2017},
 
